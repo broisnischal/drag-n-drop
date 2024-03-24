@@ -1,5 +1,5 @@
 {
-  "name": "@repo/drag-n-drop",
+  "name": "@repo/dropzone",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,7 +7,10 @@
     "generate:component": "turbo gen react-component"
   },
   "exports": {
-    ".": "./dist"
+    "./index": "./src/index.ts",
+    "./drag": "./src/drag.tsx",
+    "./drop": "./src/drop.tsx",
+    "./package.json": "./package.json"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
@@ -23,6 +26,9 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "react-dom": "^18.2.0"
+    "@types/react-icons": "^3.0.0",
+    "cva": "^0.0.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1"
   }
 }

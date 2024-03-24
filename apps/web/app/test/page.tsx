@@ -1,7 +1,18 @@
+"use client";
+import DropZone from "@repo/ui/button";
+
 export default function Page() {
   return (
-    <div>
-      <ButtonD>ad</ButtonD>
+    <div
+      className=""
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight: "100vh",
+      }}
+    >
+      <DropZone key={12}></DropZone>
     </div>
   );
 }
